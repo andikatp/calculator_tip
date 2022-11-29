@@ -84,7 +84,9 @@ class _HomeScreenState extends State<HomeScreen> {
                     style: const TextStyle(color: Colors.purple),
                     decoration: const InputDecoration(
                       border: UnderlineInputBorder(),
-                      prefixText: 'Bill Amount',
+                      prefixIcon: Padding(
+                          padding: EdgeInsets.symmetric(vertical: 10),
+                          child: Text('Bill Amount ')),
                     ),
                     keyboardType:
                         const TextInputType.numberWithOptions(decimal: true),
